@@ -1,3 +1,5 @@
+require("Deferred.js");
+
 logger.debug("Starting deferredTests");
 
 var a = new Deferred();

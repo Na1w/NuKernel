@@ -1,6 +1,7 @@
 /*
     Playground to verify threading.
 */
+require("ProcessManager.js");
 
 ProcessManager.spawnProcess("KillerThread", 
 { 

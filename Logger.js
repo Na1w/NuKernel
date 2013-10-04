@@ -46,4 +46,4 @@ Class.create("Framework.logger", {
   }
 });
 
-var logger = new Framework.logger("logger");
+window.logger = new Framework.logger("logger");

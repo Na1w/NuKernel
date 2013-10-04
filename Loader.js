@@ -22,15 +22,38 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
  */
-
+/*
+	Basic loader 
+*/
 Class.create("Framework.Loader", {
 	initialize: function () {
+		this._loaded = {};
 		logger.debug("Loader initialized");
 	},
 
 	load: function (manifest) {
 
+	},
+
+	syncLoad: function (name) {
+		if(!this._loaded[name]) { 
+			var xmlRequest = new XMLHttpRequest();
+			xmlRequest.open("GET", name, false);
+			xmlRequest.send(null);
+			var res = xmlRequest.responseText;
+			if(res) {
+				this._loaded[name] = true;
+			}
+			return res;
+		}
 	}
 });
 
 var Loader = new Framework.Loader();
+/* Inspired by js-node require */
+var require = function(arg) { 
+		var res = Loader.syncLoad.call(Loader, arg);
+		if(res) {
+			eval(res);
+		}
+};

@@ -113,4 +113,4 @@
  logger.debug("Deferred loaded");
 
 //Alias to Deferred to save typing...
- var Deferred = Framework.Deferred;
+ window.Deferred = Framework.Deferred;

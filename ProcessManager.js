@@ -26,6 +26,8 @@
    Process Manager
    Spawns and manages processes.
 */
+require("Logger.js");
+require("Deferred.js");
 
 Class.create("Framework.ProcessManager", {
 /******************  Worker thread code starts here *****************************************/
@@ -346,4 +348,4 @@ Class.create("Framework.ProcessManager", {
     }
 }); 
 
-var ProcessManager = new Framework.ProcessManager();
+window.ProcessManager = new Framework.ProcessManager();
