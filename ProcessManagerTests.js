@@ -2,7 +2,7 @@
     Playground to verify threading.
 */
 
-ProcessManager.spawnProcess("KillerThread", 
+/*ProcessManager.spawnProcess("KillerThread", 
 { 
  sleep: function(howLong) {
     var targetTime = Date.now() + howLong;
@@ -32,11 +32,11 @@ ProcessManager.spawnProcess("KillerThread",
     self.performRPC("ProcessManager.listProcesses");
     return 0;
  }
-});
+});*/
 
 /* I just happen to know that this one will be process 1  as it's spawned after process 0 :-)
    but genereally, but it's not good practice really to hardcode it this way :-) */
-
+/*
 ProcessManager.spawnProcess("TheVictim", 
 { 
  sleep: function(howLong) {
@@ -58,4 +58,4 @@ ProcessManager.spawnProcess("TheVictim",
  }
 });
 
-ProcessManager.spawnProcess("DumbThreadThatDoesNothing", {});
+ProcessManager.spawnProcess("DumbThreadThatDoesNothing", {});*/

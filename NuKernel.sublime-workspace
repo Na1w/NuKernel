@@ -139,30 +139,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "NuKernel.html",
-			"settings":
-			{
-				"buffer_size": 557,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Logger.js",
-			"settings":
-			{
-				"buffer_size": 2146,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "ClassFramework.js",
-			"settings":
-			{
-				"buffer_size": 5499,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -208,6 +184,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Andersson/Documents/GitHub/NuKernel/ClassFramework.js",
+		"/C/Users/Andersson/Documents/GitHub/NuKernel/Logger.js",
+		"/C/Users/Andersson/Documents/GitHub/NuKernel/NuKernel.html",
 		"/C/Users/fredr_000/Documents/Research/ProcessManager.js",
 		"/C/Users/fredr_000/Documents/FIR.txt",
 		"/C/Users/fredr_000/Documents/kurzsounds",
@@ -266,93 +245,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "NuKernel.html",
-					"settings":
-					{
-						"buffer_size": 557,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								549,
-								549
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Logger.js",
-					"settings":
-					{
-						"buffer_size": 2146,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								470,
-								470
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "ClassFramework.js",
-					"settings":
-					{
-						"buffer_size": 5499,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1606,
-								1606
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -411,7 +305,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true
 }
