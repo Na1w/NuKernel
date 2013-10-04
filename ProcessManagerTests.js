@@ -1,5 +1,11 @@
 /*
     Playground to verify threading.
+
+    Notice: The "sleep" method used here will utilities 100% cpu time 
+    while sleeping, don't use it for any real application, it's simply 
+    a demonstration to throttle the output of these threads.
+
+    Use setTimeout or something if you really have to sleep.
 */
 require("ProcessManager.js");
 
@@ -31,6 +37,7 @@ ProcessManager.spawnProcess("KillerThread",
     self.performRPC("logger.debug", "***** Swining the axe- Killing process 1");
     self.performRPC("ProcessManager.destroyProcess", 1);
     self.performRPC("ProcessManager.listProcesses");
+    self.performRPC("ProcessManager.teardownAllThreads");
     return 0;
  }
 });
@@ -47,7 +54,7 @@ ProcessManager.spawnProcess("TheVictim",
  },
 
  init: function () {
-    var a = Date.now() + (60*1000); // <--- Notice this would run for 1 minute if it wasn't killed
+    var a = Date.now() + (20*1000); // <--- Notice this would run for 20 seconds if it wasn't killed
     var c = 0;
     self.performRPC("logger.debug", "Hello World from TheVictimThread");
     while(a > Date.now()) {
