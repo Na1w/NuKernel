@@ -1,4 +1,4 @@
-logger.debug("DeferredTests");
+logger.debug("Starting deferredTests");
 
 var a = new Deferred();
 
@@ -24,3 +24,5 @@ a.addErrback(function (e) {
 });
 
 a.callback(6);
+
+logger.debug("DeferredTests done.");
