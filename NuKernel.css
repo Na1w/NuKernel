@@ -1,0 +1,20 @@
+.logger {
+	overflow-y:hidden; 
+	height:50px; /* About 3 lines of text */
+	width:100%; 
+	background-color:#ffffff; 
+	opacity:0.1;
+	border-style: none;
+	z-index: 10; /* Make sure the logger is always on top */
+	-webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.logger:hover {
+	overflow-y:auto; 
+	border-style: inset;
+	background-color:#b0c4de; 
+	opacity: 1.0;
+	height:400px; /* About 22 lines of text */
+	width:100%; 
+};
