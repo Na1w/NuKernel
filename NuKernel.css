@@ -2,8 +2,8 @@
 	overflow-y:hidden; 
 	height:50px; /* About 3 lines of text */
 	width:100%; 
-	background-color:#ffffff; 
-	opacity:0.1;
+	background-color:#d2e6f0; 
+	opacity:0.4;
 	border-style: none;
 	z-index: 10; /* Make sure the logger is always on top */
 	-webkit-transition: all .5s ease;
@@ -17,4 +17,17 @@
 	opacity: 1.0;
 	height:400px; /* About 22 lines of text */
 	width:100%; 
-};
+}
+
+#info {
+	position:fixed;
+	z-index: -1;
+	top:10%;
+	left:10%;
+	right:10%;
+	text-align:center;
+	height:auto; /* About 3 lines of text */
+	border-style: solid;
+	background-color: #999999;
+	color:#000000;
+}
