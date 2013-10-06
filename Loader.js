@@ -52,8 +52,13 @@ Class.create("Framework.Loader", {
 var Loader = new Framework.Loader();
 /* Inspired by js-node require */
 var require = function(arg) { 
+	try {
 		var res = Loader.syncLoad.call(Loader, arg);
 		if(res) {
 			eval(res);
 		}
+	} catch(e) {
+		var loc =  document.domain || window.location;
+		logger.debug("Loader: Error loading " + arg + " from " + loc + " [" + e.message + " reason: " + e.code + "]");
+	}
 };
