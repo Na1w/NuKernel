@@ -9,11 +9,16 @@
 
   <body>
     <div id="logger" class="logger"></div>
-    <div id="info">
-      Tip. Hold the cursor over the console above to expand it- This text will be removed once the window manager is in place.<br>
-      This is a demonstration page running some basic testsuite (for manual verification).<br>
-      A real automated test harness with regression testing will be added once the framework is stable- currently it's very experimental.<br>
+
+    <div id="SystemWindowContainer" class="globalWindowScope">
+      <div class="info">
+        Tip. Hold the cursor over the console above to expand it- This text will be removed once the window manager is in place.<br>
+        This is a demonstration page running some basic testsuite (for manual verification).<br>
+        A real automated test harness with regression testing will be added once the framework is stable- currently it's very experimental.<br>
+      </div>
     </div>
+
+
     <!-- Boot sequence -->
     <script>
       if(console) {
@@ -23,9 +28,8 @@
     <script src="ClassFramework.js" type="text/javascript"></script>
     <script src="Logger.js" type="text/javascript"></script>
     <script src="Loader.js" type="text/javascript"></script>
-    <script src="DeferredTests.js" type="text/javascript"></script>
-    <script src="ProcessManagerTests.js" type="text/javascript"></script>
-
-    
+    <!-- <script src="DeferredTests.js" type="text/javascript"></script>
+    <script src="ProcessManagerTests.js" type="text/javascript"></script> -->
+    <script src="WindowManagerTests.js" type="text/javascript"></script>
   </body>
 </html>
